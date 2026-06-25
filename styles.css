@@ -22,15 +22,14 @@ body{
 
 .container{
     display: flex;
-
     flex-wrap: wrap;
-
-    width: 25%;
-    
     flex-direction: column;
 
-    margin: 100px auto;
+    width: min(90vw, 420px);
+    max-width: 400px;
+    box-sizing: border-box;
 
+    margin: 100px auto;
     min-height:100px;
 
     text-align: center;
@@ -39,6 +38,14 @@ body{
     border-radius: 15px;
 
     padding: 30px 10px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 92vw;
+        margin: 40px auto;
+        padding: 24px 12px;
+    }
 }
 
 .social-link{
