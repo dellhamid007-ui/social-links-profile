@@ -61,6 +61,10 @@ body{
     background-color: #00ff44;
     color: #141414;
 
+    transform: scale(1.05);
+
+    box-shadow: 0 0 5px 2px #00ff44;
+
     transition: all 0.3s ease;
 }
 
@@ -81,7 +85,7 @@ body{
 
 .desc{
     margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .pfp{
@@ -94,6 +98,14 @@ body{
 
     object-fit: cover;
     object-position: center;
+    transition: all 0.3s ease;
+
+}
+
+.pfp:hover{
+    filter: blur(3px);
+
+    transition: all 0.3s ease;
 }
 
 
